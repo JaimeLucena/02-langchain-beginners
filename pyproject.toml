@@ -1,0 +1,50 @@
+[project]
+name = "02-langchain-beginners"
+version = "0.1.0"
+description = "Learn LangChain fundamentals through practical Jupyter notebooks"
+requires-python = ">=3.10"
+
+# Core + notebooks + providers + (optional) local vector store for RAG
+dependencies = [
+  # Notebooks
+  "jupyter>=1.0.0",
+  "ipykernel>=6.29.0",
+  "python-dotenv>=1.0",
+
+  # LangChain modern stack (LCEL)
+  "langchain>=0.3.0",
+  "langchain-core>=0.3.0",
+  "langchain-community>=0.3.0",
+  "langchain-text-splitters>=0.3.0",
+
+  # Providers
+  "langchain-openai>=0.2.0",
+  "openai>=1.109.1",
+  "langchain-groq>=0.1.0",   # for Groq-backed OSS models (optional but nice)
+
+  # Tokenization
+  "tiktoken>=0.7.0",
+
+  # If you’ll do basic RAG locally, choose ONE of these vector stores:
+  "faiss-cpu>=1.8.0",        # pick this OR chromadb
+  # "chromadb>=0.5.5",       # alternative to FAISS (comment out the other)
+
+  # (Optional) Simple web demos later; safe to keep
+  "fastapi>=0.115",
+  "uvicorn[standard]>=0.30",
+
+  # Utilities
+  "requests>=2.32.5",
+  "pydantic>=2.8",
+  "pydantic-settings>=2.11.0"
+]
+
+[tool.uv]
+dev-dependencies = [
+  "ruff>=0.6.0",
+  "black>=24.8.0",
+  "pytest>=8.3.0"
+]
+
+[tool.uvicorn]
+factory = false
