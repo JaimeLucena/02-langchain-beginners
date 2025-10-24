@@ -1,0 +1,13 @@
+Solar energy is one of the most promising renewable energy sources today.
+It converts sunlight directly into electricity using photovoltaic cells.
+Over the last decade, the cost of solar panels has dropped by nearly 80%.
+
+Wind energy, on the other hand, uses turbines to transform the kinetic energy
+of air currents into mechanical power, which can then be converted into electricity.
+
+Both solar and wind energy play a crucial role in reducing greenhouse gas emissions.
+Governments around the world are investing heavily in renewable technologies
+to achieve carbon neutrality by 2050.
+
+However, renewable energy sources are intermittent. This is why new research
+focuses on improving energy storage systems, such as lithium-ion and solid-state batteries.
